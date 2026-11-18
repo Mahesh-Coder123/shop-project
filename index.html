@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SHOP.CO</title>
+  
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" />
+
+  <!-- ONLY ADDED THIS FOR MOBILE IMAGE FIX -->
+  <style>
+    @media (max-width: 991px) {
+      .hero-banner {
+        background-image: none !important;
+        background-color: #F2F0F1;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .custom-btn {
+        width: 100% !important;
+      }
+    }
+    .card-img-top {
+      height: 200px;
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body style="#F0F0F0" >
+  <header>
+    <!-- Top Bar -->
+    <div class="container-fluid bg-dark py-2">
+      <p class="text-white text-center mb-0" style="font-size: 12px;">Sign up and get 20% off to your first order. Sign Up Now</p>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar bg-white navbar-expand-lg py-3">
+      <div class="container">
+
+        <!-- ========================================== -->
+        <!-- CHANGE 1: Left side flex added for button & brand -->
+        <!-- ========================================== -->
+        <div class="d-flex align-items-center gap-2">
+          <button class="navbar-toggler border-0 p-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navlinks">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a href="#" class="navbar-brand fw-bold fs-2 m-0">SHOP.CO</a>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- CHANGE 2: Right icons moved OUTSIDE collapse -->
+        <!-- ========================================== -->
+        <div class="d-flex align-items-center gap-3 ms-auto order-lg-last">
+          <a href="#" class="text-dark fs-5 text-decoration-none"><i class="bi bi-cart"></i></a>
+          <a href="#" class="text-dark fs-5 text-decoration-none"><i class="bi bi-person-circle"></i></a>
+        </div>
+
+        <!-- Collapse Menu -->
+        <div class="collapse navbar-collapse" id="navlinks">
+          <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-3">
+            <li class="nav-item"><a href="#" class="dropdown-toggle nav-link active">Shop</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">On sale</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">New Arrivals</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Brands</a></li>
+          </ul>
+
+          <!-- ========================================== -->
+          <!-- CHANGE 3: Search bar width adjusted for neat layout -->
+          <!-- ========================================== -->
+          <div class="input-group" style="max-width: 350px;">
+            <span class="input-group-text bg-light border-0 rounded-start-pill ps-3">
+              <i class="bi bi-search text-muted"></i>
+            </span>
+            <input type="text" class="form-control bg-light border-0 shadow-none rounded-end-pill py-2" placeholder="Search for products...">
+          </div>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+<!-- header close -->
+<!-- banner start -->
+<section class="container-fluid pt-5 pb-0 py-lg-5 hero-banner" style="background-image: url('images/Rectangle 2.png'); background-size: cover; background-position: center; min-height: 500px;">
+  <div class="container h-100 d-flex align-items-center">
+   <!-- CHANGED HERE: text-center for mobile, text-lg-start for desktop -->
+   <div class="col-12 col-lg-6 text-center text-lg-start">
+    <h2 class="text-dark fw-bold display-4">
+      FIND CLOTHES<br>
+      THAT MATCHES<br>
+      YOUR STYLE
+    </h2>
+    <p class="text-muted">Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
+    <button class="text-white btn btn-dark rounded-pill px-5 py-2 fs-5 fw-medium  custom-btn">SHOP</button>
+    <div class="container my-4">
+      <!-- CHANGED HERE: justify-content-center for mobile -->
+      <div class="row text-start justify-content-center">
+
+        <!-- Stat 1 -->
+        <div class="col-6 col-lg-4 border-end">
+          <h3 class="text-dark fw-bold fs-2 mb-0">200+</h3>
+          <p class="text-muted mb-0" style="font-size: 14px;">International Brands</p>
+        </div>
+
+        <!-- Stat 2 -->
+        <div class="col-6 col-lg-4 border-end ">
+          <h3 class="text-dark fw-bold fs-2 mb-0">2,000+</h3>
+          <p class="text-muted mb-0" style="font-size: 14px;">High-Quality Products</p>
+        </div>
+
+        <!-- Stat 3 -->
+        <div class="col-6 col-lg-4 text-center text-lg-start mt-3 mt-lg-0">
+          <h3 class="text-dark fw-bold fs-2 mb-0">30,000+</h3>
+          <p class="text-muted mb-0" style="font-size: 14px;">Happy Customers</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<!-- MOBILE ONLY IMAGE (Center Aligned & Perfectly Focused) -->
+
+<div class="d-lg-none p-0 m-0 text-center" style="background-color: #F2F0F1;">
+  <img src="images/Rectangle 2.png" class=" w-100" style="object-fit: contain;" alt="Fashion Models">
+</div>
+</section>
+<!-- brand names -->
+<section class="container-fluid bg-dark">
+  <div class="row justify-content-around align-items-center p-2">
+    <div class="col-2"><img src="images/Group1.png" class="img-fluid"></div>
+    <div class="col-2"><img src="images/Group2.png" class="img-fluid"></div>
+    <div class="col-2"><img src="images/Group3.png" class="img-fluid"></div>
+    <div class="col-2"><img src="images/Group4.png" class="img-fluid"></div>
+    <div class="col-2"><img src="images/Group5.png" class="img-fluid"></div>
+  </div>
+</section>
+<!-- New Arrivals -->
+<section class="container my-5">
+  <h1 class="text-center mb-4">NEW ARRIVALS</h1>
+  
+  <div class="row g-4 mb-4">
+    <!-- Product 1 -->
+    <div class="col-6 col-sm-6 col-md-3">
+      <div class="card h-100 border-0 shadow-sm">
+        <img src="images/tshirt.png" class="card-img-top img-fluid rounded" alt="New Arrival T-shirt">
+        <div class="card-body text-center p-2">
+          <p class="card-text fw-bold mb-1">T-SHIRT WITH TAPE DETAILS</p>
+          <div class="mb-1">
+            <span class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </span>
+            <span class="text-muted small fw-semibold">(4.5)</span>
+          </div>
+          <p class="fw-bold text-dark mb-0">$120</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="col-6 col-sm-6 col-md-3">
+      <div class="card h-100 border-0 shadow-sm">
+        <img src="images/tshirt.png" class="card-img-top img-fluid rounded" alt="New Arrival T-shirt">
+        <div class="card-body text-center p-2">
+          <p class="card-text fw-bold mb-1">T-SHIRT WITH TAPE DETAILS</p>
+          <div class="mb-1">
+            <span class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </span>
+            <span class="text-muted small fw-semibold">(4.5)</span>
+          </div>
+          <p class="fw-bold text-dark mb-0">$120</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="col-6 col-sm-6 col-md-3">
+      <div class="card h-100 border-0 shadow-sm">
+        <img src="images/tshirt.png" class="card-img-top img-fluid rounded" alt="New Arrival T-shirt">
+        <div class="card-body text-center p-2">
+          <p class="card-text fw-bold mb-1">T-SHIRT WITH TAPE DETAILS</p>
+          <div class="mb-1">
+            <span class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </span>
+            <span class="text-muted small fw-semibold">(4.5)</span>
+          </div>
+          <p class="fw-bold text-dark mb-0">$120</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="col-6 col-sm-6 col-md-3">
+      <div class="card h-100 border-0 shadow-sm">
+        <img src="images/tshirt.png" class="card-img-top img-fluid rounded" alt="New Arrival T-shirt">
+        <div class="card-body text-center p-2">
+          <p class="card-text fw-bold mb-1">T-SHIRT WITH TAPE DETAILS</p>
+          <div class="mb-1">
+            <span class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </span>
+            <span class="text-muted small fw-semibold">(4.5)</span>
+          </div>
+          <p class="fw-bold text-dark mb-0">$120</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-center">
+    <button type="button" class="btn btn-outline-secondary px-4">View All</button>
+  </div>
+</section>
+<!-- top selling -->
+
+<section class="container">
+  <h1 class="text-center mb-4">TOP SELLING</h1>
+
+  <div class="row g-4 mb-4">
+
+    <!-- 1st Product -->
+    <div class="col-6 col-md-3">
+      <div class="card shadow-sm border-0 h-100">
+        <img src="images/pant.png" class="card-img-top img-fluid rounded" alt="Jeans">
+
+        <div class="card-body text-center">
+          <p class="card-text fw-bold">FADED SKINNY JEANS</p>
+
+          <div class="mb-3">
+            <span class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </span>
+            <span class="text-muted small fw-semibold">(4.5)</span>
+          </div>
+
+          <p class="fw-bold text-dark mb-0">$120</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2nd Product -->
+    <div class="col-6 col-md-3">
+      <div class="card shadow-sm border-0 h-100">
+        <img src="images/pant.png" class="card-img-top img-fluid rounded" alt="Jeans">
+
+        <div class="card-body text-center">
+          <p class="card-text fw-bold">FADED SKINNY JEANS</p>
+
+          <div class="mb-3">
+            <span class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </span>
+            <span class="text-muted small fw-semibold">(4.5)</span>
+          </div>
+
+          <p class="fw-bold text-dark mb-0">$120</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3rd Product -->
+    <div class="col-6 col-md-3">
+      <div class="card shadow-sm border-0 h-100">
+        <img src="images/pant.png" class="card-img-top img-fluid rounded" alt="Jeans">
+
+        <div class="card-body text-center">
+          <p class="card-text fw-bold">FADED SKINNY JEANS</p>
+
+          <div class="mb-3">
+            <span class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </span>
+            <span class="text-muted small fw-semibold">(4.5)</span>
+          </div>
+
+          <p class="fw-bold text-dark mb-0">$120</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4th Product -->
+    <div class="col-6 col-md-3">
+      <div class="card shadow-sm border-0 h-100">
+        <img src="images/pant.png" class="card-img-top img-fluid rounded" alt="Jeans">
+
+        <div class="card-body text-center">
+          <p class="card-text fw-bold">FADED SKINNY JEANS</p>
+
+          <div class="mb-3">
+            <span class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </span>
+            <span class="text-muted small fw-semibold">(4.5)</span>
+          </div>
+
+          <p class="fw-bold text-dark mb-0">$120</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- View All Button -->
+  <div class="d-flex justify-content-center">
+    <button type="button" class="btn btn-outline-secondary px-4">
+      View All
+    </button>
+  </div>
+
+</section>
+<!-- BROWSE BY DRESS STYLE -->
+<section class="container my-5">
+  <h2 class="text-center fw-semibold my-5">BROWSE BY DRESS STYLE</h2>
+  <div class="row g-4 mb-4">
+    <!-- Casual Card -->
+    <div class="col-12 col-md-4">
+      <div class="card border-0 shadow-sm h-100 position-relative overflow-hidden rounded-4" 
+      style="background: url('images/casual.png') no-repeat center center; background-size: cover; min-height: 250px;">
+      <h4 class="fw-bold p-4 position-relative z-1 text-dark">Casual</h4>
+    </div>
+  </div>
+
+  <!-- Formal Card -->
+  <div class="col-12 col-md-8">
+    <div class="card border-0 shadow-sm h-100 position-relative overflow-hidden rounded-4" 
+    style="background: url('images/formal.png') no-repeat center center; background-size: cover; min-height: 250px;">
+    <h4 class="fw-bold p-4 position-relative z-1 text-dark">Formal</h4>
+  </div>
+</div>
+</div>
+<div class="row g-4 mb-4">
+  <!-- party(col-4) -->
+  <div class="col-12 col-md-4">
+    <div class="card border-0 shadow-sm h-100 position-relative overflow-hidden rounded-4" 
+    style="background: url('images/gym.png') no-repeat center center; background-size: cover; min-height: 250px;">
+    <h4 class="fw-bold p-4 position-relative z-1 text-dark">Gym</h4>
+  </div>
+</div>
+
+<!-- Gym-->
+<div class="col-12 col-md-8">
+  <div class="card border-0 shadow-sm h-100 position-relative overflow-hidden rounded-4" 
+  style="background: url('images/party.png') no-repeat center center; background-size: cover; min-height: 250px;">
+  <h4 class="fw-bold p-4 position-relative z-1 text-dark">Party</h4>
+</div>
+</div>
+</div>
+</section>
+
+<!-- OUR HAPPY CUSTOMERS -->
+
+<section class="container">
+  <div class="row g-3 d-flex justify-content-around">
+    <h1 class="fw-bold text-start text-md-center">
+      OUR HAPPY <br class="d-md-none">
+      CUSTOMERS
+    </h1>
+    <!-- 1st card -->
+    <div class="col-12 col-lg-4">
+      <div class="card w-100 h-100">
+        <div class="card-body">
+          <span class="text-warning">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+          </span>
+          <h6 class="card-subtitle mt-2 text-muted">Sarah M.<i class="fa-solid fa-circle-check text-success"></i></h6>
+          <p class="card-text">
+            "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2nd card -->
+    <div class="col-12 col-lg-4">
+      <div class="card w-100 h-100">
+        <div class="card-body">
+          <span class="text-warning">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+          </span>
+          <h6 class="card-subtitle mt-2 text-muted">Sarah M.<i class="fa-solid fa-circle-check text-success"></i></h6>
+          <p class="card-text">
+            "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3rd card -->
+    <div class="col-12 col-lg-4">
+      <div class="card w-100 h-100">
+        <div class="card-body">
+          <span class="text-warning">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+          </span>
+          <h6 class="card-subtitle mt-2 text-muted">Sarah M.<i class="fa-solid fa-circle-check text-success"></i></h6>
+          <p class="card-text">
+            "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!--STAY UPTO DATE ABOUT OUR LATEST OFFERS  -->
+<section class="container my-5">
+
+ <div class="row bg-dark text-white rounded-4 p-4 align-items-center mx-2 mx-md-0">
+
+  <!-- Left Side - Heading -->
+  <div class="col-12 col-md-6">
+    <h2 class="fw-bold text-uppercase mb-0">
+      STAY UP TO DATE ABOUT
+      OUR LATEST OFFERS
+    </h2>
+  </div>
+
+  <!-- Right Side - Subscribe Form -->
+  <div class="col-12 col-md-6 mt-4 mt-md-0">
+
+    <div class="d-flex flex-column gap-2">
+
+      <!-- Email Input -->
+      <div class="input-group">
+        <span class="input-group-text bg-white border-0 rounded-start-pill">
+          <i class="bi bi-envelope"></i>
+        </span>
+
+        <input type="email"
+        class="form-control border-0 rounded-end-pill"
+        placeholder="Enter your email address">
+      </div>
+
+      <!-- Subscribe Button -->
+      <button class="btn btn-light rounded-pill w-100">
+        Subscribe to Newsletter
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+</section>
+<!-- footer -->
+<section class="container my-5">
+    <div class="row">
+        <!-- Logo and Social links column -->
+        <div class="col-12 col-md-4">
+            <h2 class="fw-bold">SHOP.CO</h2>
+            <p class="text-muted">We have clothes that suits your style and <br>which you’re proud to wear. From<br> women to men.</p>
+            <div class="d-flex gap-3">
+                <i class="fa-brands fa-facebook fa-2x"></i>
+                <i class="fa-brands fa-twitter fa-2x"></i>
+                <i class="fa-brands fa-instagram fa-2x"></i>
+                <i class="fa-brands fa-github fa-2x"></i>
+            </div>
+        </div>
+
+        <!-- 4 Columns Container (FIXED: Changed d-flex flex-wrap to row so columns stay in one single line on desktop) -->
+        <div class="col-12 col-md-8">
+            <div class="row fs-6 my-4 text-start">
+                
+                <div class="col-6 col-md-3">
+                    <h3 class="fs-5 fw-bold">Company</h3>
+                    <p class="text-muted mb-2">About</p>
+                    <p class="text-muted mb-2">Features</p>
+                    <p class="text-muted mb-2">Works</p>
+                    <p class="text-muted mb-2">Career</p>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <h3 class="fs-5 fw-bold">Help</h3>
+                    <p class="text-muted mb-2">Customer Support</p>
+                    <p class="text-muted mb-2">Delivery Details</p>
+                    <p class="text-muted mb-2">Terms & Conditions</p>
+                    <p class="text-muted mb-2">Privacy Policy</p>
+                </div>
+
+                <div class="col-6 col-md-3 mt-4 mt-md-0">
+                    <h3 class="fs-5 fw-bold">FAQ</h3>
+                    <p class="text-muted mb-2">Account</p>
+                    <p class="text-muted mb-2">Manage Deliveries</p>
+                    <p class="text-muted mb-2">Orders</p>
+                    <p class="text-muted mb-2">Payments</p>
+                </div>
+
+                <div class="col-6 col-md-3 mt-4 mt-md-0">
+                    <h3 class="fs-5 fw-bold">Resources</h3>
+                    <p class="text-muted mb-2">Free eBooks</p>
+                    <p class="text-muted mb-2">Development Tutorial</p>
+                    <p class="text-muted mb-2">How to - Blog</p>
+                    <p class="text-muted mb-2">Youtube Playlist</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
